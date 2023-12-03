@@ -1,0 +1,211 @@
+/* Global styling for the body */
+body {
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 70px 1fr;
+    grid-template-areas: "side header" "side main";
+}
+
+/* Styling for the header */
+.header {
+    background-color: #000;
+    grid-area: header;
+    border-bottom-left-radius: 3px;
+}
+
+/* Styling for the sidebar */
+.sidebar {
+    background-color: white;
+    grid-area: side;
+    border-right: 2px solid #000;
+    /* Border on the right side of the sidebar */
+}
+
+/* Styling for the main content */
+.main {
+    background-color: white;
+    grid-area: main;
+    display: flex;
+    flex-direction: row;
+    border-left: 2px solid #000;
+    /* Border on the left side of the main content */
+}
+
+/* Styling for the logo */
+#logo {
+    font-size: 30px;
+    color: black;
+    letter-spacing: 4px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    background-color: #fff;
+}
+
+/* Additional styling for the main content */
+.main {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Styling for the to-do input section */
+.to-do-input {
+    display: flex;
+    gap: 10px;
+}
+
+/* Styling for the task input field */
+#item {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Styling for the category input field */
+#categoryInput {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Styling for the buttons in the to-do input section */
+.to-do-input button {
+    padding: 10px 15px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Styling for the date display */
+#date {
+    color: #333;
+    margin-left: -18px;
+    margin-bottom: 20px;
+}
+
+/* Styling for the main heading */
+.main h1 {
+    color: #333;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Styling for the unordered list */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Styling for list items */
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Styling for buttons within links */
+.links button {
+    background-color: inherit;
+    border: none;
+    padding: 10px 5px;
+    margin-top: 25px;
+    border-radius: 5px;
+    color: black;
+    font-size: 18px;
+}
+
+/* Styling for button hover effect */
+.links button:hover {
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Styling for buttons within the task list */
+#taskList button {
+    background-color: inherit;
+    color: #000;
+    border: none;
+    font-size: 13px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Styling for spans */
+span {
+    background-color: inherit;
+    color: #000;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Styling for checkbox inputs within list items */
+li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Styling for important tasks */
+.important {
+    background-color: blanchedalmond;
+}
+
+/* Styling for the sidebar links section */
+.sidebar .links {
+    grid-area: side;
+    padding-left: 55px;
+    margin-top: 30px;
+}
+
+/* Styling for buttons within the sidebar links */
+.sidebar .links>button {
+    text-decoration: none;
+    display: block;
+    padding: 10px 5px;
+    border-radius: 5px;
+    color: black;
+    display: flex;
+    text-align: center;
+    gap: 10px;
+}
+
+/* Styling for the search bar section */
+.search-bar {
+    padding-top: 17px;
+    padding-left: 40px;
+}
+
+/* Styling for the search bar input */
+.search-bar input {
+    width: 45%;
+    padding: 12px 20px;
+    border-radius: 15px;
+    font-size: 14px;
+    color: white;
+    outline: none;
+    background: transparent;
+    border: 1px solid white;
+}
+
+/* Repeating styling for the sidebar links section (possible redundancy) */
+.sidebar .links {
+    grid-area: side;
+    padding-left: 55px;
+    margin-top: 30px;
+}
+
+/* Styling for the "todo" section */
+.todo {
+    width: 60%;
+    padding-left: 40px;
+}

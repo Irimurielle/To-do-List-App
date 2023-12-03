@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>To-Do List App</title>
+    </head>
+    <body>
+        <!-- Header section with search bar -->
+        <header class="header">
+            <div class="search-bar">
+                <input id="search" type="search" onkeyup="searchTasks()" placeholder="Search" name="search" autocomplete="off">
+            </div>
+        </header>
+        <!-- Sidebar section -->
+        <section class="sidebar">
+            <h2 id="logo">TODO</h2>
+            <div class="links">
+                <button onclick="filterByCategory('all')"><i class="fas fa-house"></i>Home</button>
+                <button onclick="filterByCategory('personal')"><i class="fas fa-person"></i>Personal</button>
+                <button onclick="filterByCategory('work')"><i class="fas fa-briefcase"></i>Work</button>
+                <button onclick="filterByCategory('education')"><i class="fas fa-book"></i>Education</button>
+                <button onclick="showCompletedTasks()"><i class="fas fa-check-circle"></i>Completed</button>
+                <button onclick="showDeletedTasks()"><i class="fas fa-trash-alt"></i>Trash</button></li>
+            </div>
+        </section>
+        <!-- Main content section -->
+        <main class="main">
+            <section class="todo">
+                <h1>My To-Do List</h1>
+                <h2><span id="date"></span></h2>
+                <!-- Input for adding new tasks -->
+                <div class="to-do-input">
+                    <input type="text" id="item" placeholder="New task">
+                    <!-- Dropdown for selecting task category -->
+                    <select id="categoryInput">
+                        <option value="personal">Personal</option>
+                        <option value="work">Work</option>
+                        <option value="education">Education</option>
+                    </select>
+                    <!-- Button to add a new task -->
+                    <button onclick="addTask()">Add Task</button>
+                </div>
+                <!-- List to display tasks -->
+                <ul id="taskList"></ul>
+            </section>
+        </main>
+        <script src="scripts.js"></script>
+    </body>
+</html>
